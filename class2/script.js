@@ -1,5 +1,11 @@
 // console.log("Api Calling");
+function add(num1, num2) {
+    return num1 + num2;
+    document.write(num1 + num2);
+    document.writeln(num1 + num2);
 
+}
+add(20, 30)
 
 // fetch("apiurl", {
 //     method: "GET/POST/DELETE/PUT/PATCH",
@@ -11,47 +17,49 @@
 // window.onload = () => {
 //     console.log("Before API Calling");
 
-//     // fetch('https://jsonplaceholder.typicode.com/todos/1', { method: "GET" })
-//     //     .then(response => response.json())
-//     //     .then(json => console.log(json))
-//     // let isLoading = false;
-//     // fetch('https://jsonplaceholder.typicode.com/albums')
-//     //     .then((response) => {
-//     //         isLoading = true;
-//     //         console.log("response :", response);
-//     //         return response.json();
-//     //     })
-//     //     .then(function (data) {
-//     //         // isLoading = false;
-//     //         console.log("data :", data);
-//     //     })
-//     //     .catch((error) => {
-//     //         // isLoading = false;
-//     //         console.log("error: ", error);
-//     //     })
-//     //     .finally(() => {
-//     //         isLoading = false;
-//     //         console.log("finally block calling");
-//     //     })
-//     // let isLoading = false;
-//     // const getAllUsers = async () => {
-//     //     try {
-//     //         isLoading = true;
-//     //         const response = await fetch('https://jsonplaceholder.typicode.com/users');
-//     //         console.log("response :", response);
-//     //         const data = await response.json();
-//     //         //  isLoading = false;
-//     //         console.log("data :", data);
-//     //     } catch (error) {
-//     //         // isLoading = false;
-//     //         console.log("error: ", error);
-//     //     }
-//     //     finally {
-//     //         isLoading = false;
-//     //         console.log("finally block calling");
-//     //     }
-//     // }
-//     // getAllUsers();
+// fetch('https://jsonplaceholder.typicode.com/todos/1', { method: "GET" })
+//     .then(response => response.json())
+//     .then(json => console.log(json))
+// let isLoading = false;
+// fetch('https://jsonplaceholder.typicode.com/albums')
+//     .then((response) => {
+//         // isLoading = true;
+//         console.log("response :", response);
+//         return response.json();
+//     })
+//     .then(function (data) {
+//         // isLoading = false;
+//         console.log("data :", data);
+//     })
+//     .catch((error) => {
+//         // isLoading = false;
+//         console.log("error: ", error);
+//     })
+//     .finally(() => {
+//         // isLoading = false;
+//         console.log("finally block calling");
+//     })
+
+
+let isLoading = false;
+const getAllUsers = async () => {
+    try {
+        isLoading = true;
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        console.log("response :", response);
+        const data = await response.json();
+        //  isLoading = false;
+        console.log("data :", data);
+    } catch (error) {
+        // isLoading = false;
+        console.log("error: ", error);
+    }
+    finally {
+        isLoading = false;
+        console.log("finally block calling");
+    }
+}
+getAllUsers();
 //     // const getAllAlbums = async () => {
 //     //     try {
 //     //         const response = await fetch('https://jsonplaceholder.typicode.com/albums');
