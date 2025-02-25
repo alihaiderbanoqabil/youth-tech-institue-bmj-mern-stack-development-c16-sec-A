@@ -48,3 +48,21 @@ document.getElementById("demo").innerHTML = text;
 // import message from "./message.js";
 
 // document.getElementById("demo").innerHTML = message();
+
+const add = () => { 
+
+}
+
+const add = () => 
+{ 
+
+}
+
+function sub(params) {
+    
+}
+
+function sub(params) 
+{
+    
+}
