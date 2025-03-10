@@ -63,7 +63,8 @@ import { Footer } from './components/Footer'
 // import './App.css'
 import Header from './components/Header';
 import { Greeting } from './components/Greeting';
-import Counter from './components/Counter';
+// import Counter from './components/Counter';
+import Posts from './components/Posts';
 
 const inlineStyle = { backgroundColor: "cyan", border: "1px solid red" };
 
@@ -114,7 +115,8 @@ const App = () => {
         <Greeting name="Hasnain" age={20} address={address2} />
         <Greeting name="Usman" age={30} address={address3} />
         <Footer /> */}
-        <Counter />
+        {/* <Counter /> */}
+        <Posts />
       </div>
       {/* <div className='div2'>
         <Header />
